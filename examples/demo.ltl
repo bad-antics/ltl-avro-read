@@ -1,0 +1,10 @@
+// examples/demo.ltl — runnable demo for ltl_avro_read
+
+import std::io
+use ltl_avro_read as lib
+
+fn main() {
+    io::println("ltl_avro_read demo starting...")
+    let result = lib::main() |> io::inspect()
+    io::println("demo complete")
+}
